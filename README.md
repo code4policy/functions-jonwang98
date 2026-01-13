@@ -1,23 +1,8 @@
 # Assignment: functions
 
-Install `pytest`: 
-```
-pip install pytest
-```
-
-We'll use `pytest` to test the Python functions we write below. 
-
-In your home directory, make a folder called `Development`, if it doesn't exist. This is where we will keep all of the code for the class. Next, make sure that you are inside that folder, by checking the output of the following command:
-
-```shell
-pwd
-```
-
-If `pwd` shows that you are in a different directory, run `cd ~/Development` and check with `pwd` again.
-
 ## How to clone this repo
 
-Next, clone this repository by clicking the green button in the upper right corner, selecting `SSH` and copying the string that looks like `git@github.com:code4policy/<REPO-NAME>.git` (`<REPO-NAME>` will be the name of your repository). Then, in the terminal run the following:
+Clone this repository by clicking the green button in the upper right corner, selecting `SSH` and copying the string that looks like `git@github.com:code4policy/<REPO-NAME>.git` (`<REPO-NAME>` will be the name of your repository). Then, in the terminal run the following:
 
 ```
 git clone git@github.com:code4policy/<REPO-NAME>.git
@@ -27,7 +12,15 @@ Note that by default, git will clone the repository into a folder with name `<RE
 
 ## Python 
 
-1. create a new branch in your git repo called "calculator"
+We'll use the `pytest` Python library to test the functions we write below. Let's install `pytest` in a Python virtual environment: 
+
+```
+python3 -m venv virtualenv         # create a python virtual environment
+source ./virtualenv/bin/activate   # activate the virtual environment
+pip install pytest                 # install the pytest package
+```
+
+1. create a new branch in your git repo called `calculator`
 
 2. inside that branch create a new file called `calculator.py`
 
